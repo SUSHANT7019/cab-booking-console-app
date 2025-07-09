@@ -66,7 +66,7 @@ Run Main.java to start the app.
 
 Use the console menu to:
 
-![ER Diagram](Screenshot 2025-07-09 193232.png)
+![ER Diagram](./Screenshot%202025-07-09%20193232.png)
 
 
 
