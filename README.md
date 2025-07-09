@@ -11,15 +11,10 @@ A simple console-based Java application that simulates a basic cab booking syste
 cab-booking-app/
 
 ├── pom.xml
-
 └── src/
-
     └── main/
-    
         └── java/
-        
             └── cabbooking/
-            
                 ├── Main.java
                 ├── DBConnection.java
                 ├── dao/
