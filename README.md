@@ -30,25 +30,24 @@ cab-booking-app/
                     └── Ride.java
 🗃️ Database Setup (PostgreSQL)
 
-CREATE TABLE users (
+CREATE TABLE if not exists  users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     phone VARCHAR(15)
 );
 
-CREATE TABLE drivers (
+CREATE TABLE if not exists  drivers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     available BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE rides (
+CREATE TABLE if not exists rides (
     ride_id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
     driver_id INT REFERENCES drivers(id) ON DELETE SET NULL,
     status VARCHAR(20)
 );
-📌 Make sure to insert users and drivers before creating rides to avoid foreign key errors.
 
 ⚙️ Configuration
 Edit the PostgreSQL credentials in DBConnection.java:
@@ -67,13 +66,11 @@ Run Main.java to start the app.
 
 Use the console menu to:
 
-Register users/drivers
 
-View drivers
 
-Book cabs
 
-View all rides
+
+
 
 🧠 Features
 Register users & drivers
@@ -95,6 +92,7 @@ PostgreSQL JDBC with basic DAO pattern
         <version>42.7.1</version>
     </dependency>
 </dependencies>
+
 🧑‍💻 Author
 Made with 💡 by Sushant Thadge
 
