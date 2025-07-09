@@ -8,9 +8,6 @@ A simple console-based Java application that simulates a basic cab booking syste
 ✅ Maven Project Structure
 
 📂 Project Structure
-css
-Copy
-Edit
 cab-booking-app/
 ├── pom.xml
 └── src/
@@ -28,9 +25,7 @@ cab-booking-app/
                     ├── Driver.java
                     └── Ride.java
 🗃️ Database Setup (PostgreSQL)
-sql
-Copy
-Edit
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -54,9 +49,6 @@ CREATE TABLE rides (
 ⚙️ Configuration
 Edit the PostgreSQL credentials in DBConnection.java:
 
-java
-Copy
-Edit
 String url = "jdbc:postgresql://localhost:5432/cab_booking_app";
 String user = "postgres";
 String password = "root123";
@@ -91,9 +83,7 @@ View all rides
 PostgreSQL JDBC with basic DAO pattern
 
 📦 Dependencies (in pom.xml)
-xml
-Copy
-Edit
+
 <dependencies>
     <dependency>
         <groupId>org.postgresql</groupId>
